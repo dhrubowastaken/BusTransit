@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Metropolitan Transport Corporation - Metro Feeder Route Details</title>
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/css/font-awesome.min.css">
+	   
+    <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/bootstrap.css">
+	   <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/enfont.css">
+    <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/owl_custom.css">
+<link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/style.css?1776063949=">
+<link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/responsive.css?1776063949=">
+
+    <link rel="stylesheet" href="https://mybmtc.karnataka.gov.in/assets/front/itbt/navbar.css">
+   
+  <link rel="stylesheet" type="text/css" href="https://mybmtc.karnataka.gov.in/assets/front/owl/owl.carousel.min.css">
+    <link href="assets/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="https://mybmtc.karnataka.gov.in/assets/front/tabswipe/css/swipe.css">
+  <link rel="stylesheet" type="text/css" href="https://mybmtc.karnataka.gov.in/assets/front/tabswipe/css/swipe_bundle.css">
+  <link rel="stylesheet" type="text/css" href="https://mybmtc.karnataka.gov.in/assets/front/tabswipe/css/tabswipe_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/png" sizes="42x42" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+<style>
+    .owl-policy-res-down .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    display: flex;
+}        :root {
+            --primary2-color: #2f3542;
+            --secondary2-color: #1289a7;
+
+              --primary-color: linear-gradient(90deg, var(--primary2-color) 9%, var(--secondary2-color) 120%);
+        }
+    
+  
+</style>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/rti_datatables/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/jquery_min.js"></script>
+    <script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/itbt/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/custom.js"></script>
+
+    <!-- Base URL and Language Variables -->
+    <script type="text/javascript">
+        var base_url = "https://mybmtc.karnataka.gov.in/";
+        var lang_name = "en";
+    </script>
+
+</head>
+
+<body class="dark-mode-area">
+
+    <div class="top-header">
+        <div class="topHeaderInner">
+
+            <div class="topHeadingLinks">
+
+                <a href="https://mybmtc.karnataka.gov.in/back/index" target="blank" class="login-btn">
+                    <div class="topHeadingLinkSingle">
+                        <div class="topHeadingLinkIcon">
+                            <img src="https://mybmtc.karnataka.gov.in/assets/front/itbt/images/header-profile.png" class="topHeadingLinkIco" alt="login">
+                        </div>
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt">login</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mybmtc.karnataka.gov.in/114/Metro%20Feeder%20Route%20details/kn" class="no-dec login-button">
+                    <div class="topHeadingLinkSingle">
+                  
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt"> ಕನ್ನಡ </p>
+                        </div>
+                    </div>
+                </a>
+
+                    <a  data-bs-toggle="modal" data-bs-target="#screen_reader_en" ><div class="topHeadingLinkSingle visually-challenged">
+                    <div class="topHeadingLinkIcon">
+                        <img src="https://mybmtc.karnataka.gov.in/assets/front/itbt/images/visually-challenged.png" class="topHeadingLinkIco" alt="visually challenged">
+                    </div>
+                    <div class="topHeadingLinkLable">
+                        <p class="topHeadingLinkLableTxt">visually challenged</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+
+            <div class="subHeaderActions">
+                <div class="subHeaderSwitchTheme">
+             
+<input type="checkbox" id="toggle">
+<label for="toggle">
+    <i class="fa-solid fa-sun sun"></i>
+    <i class="fa-solid fa-moon moon"></i>
+</label>
+<div class="background"></div>
+                </div>
+                  <div class="subHeaderFontSize">
+        <div class="subHeaderFontSizeAction rightBorder" id="fontDecrease">
+            <i class="fa fa-minus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeLable">
+            <p class="subHeaderFontSizeLableTxt">a</p>
+        </div>
+        <div class="subHeaderFontSizeAction leftBorder" id="fontIncrease">
+            <i class="fa fa-plus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeAction" id="fontReset">
+            <i class="fa fa-refresh subHeaderFontSizeActionIco"></i>
+        </div>
+    </div>
+            </div>
+
+        </div>
+    </div>
+
+  
+    <section class="header">
+       <div class="row dflex1 cmap_container ">
+		
+		  <div class="col-md-3 col-6 col-lg-3 flex-left leftHeadSe order1">
+ <img src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_en.png?1776063949" alt="ಬೆಂಗಳೂರು ಮಹಾನಗರ ಸಾರಿಗೆ ಸಂಸ್ಥೆ" class="cm_karnataka_photo">
+  </div>
+  
+<div class="col-md-6 col-12 col-lg-6 flex-mid dflex midHeadSec">
+  <div class="dflex web_logo_set ">
+      <img src="https://mybmtc.karnataka.gov.in/uploads/dept_logo1739947955.png" class="headerLogoImg" alt="Bengaluru Metropolitan Transport Corporation">
+      <div class="dept_text_contaoiners">
+        <p class="web_name">Bengaluru Metropolitan Transport Corporation</p>
+        <p class="web_subtitle">Government of Karnataka</p>
+			    <p class="web_subtitle"></p>
+      </div>
+          <img src="https://mybmtc.karnataka.gov.in/uploads/dept_photo1740483702.jpg" class="dept_center_logo">
+    </div>
+	  
+</div>
+
+
+                          
+
+
+<div class="col-md-3 col-6 col-lg-3 flex-right rightHeadSec order3">
+
+       <img src="https://mybmtc.karnataka.gov.in/uploads/hod_photo1742035528.png" class="headerLogoImg hli" >
+      
+  </div>
+
+         
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg shadow navbar-sec">
+        <div class="container">
+            <button class="navbar-toggler collapsed"  onclick="openNav()">
+                     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu deskmenu'><li class='nav-item level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/en'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/10/complaints/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Complaints</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='http://crm.mybmtc.com'><i class=''></i> New Complaint</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://crm.mybmtc.com/All_module'><i class=''></i> Public Grievance Dashboard</a></li></ul></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/7/recruitment/en'><i class=''></i> Recruitment</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Services.</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Casual Contract/en'><i class=''></i> Casual Contract</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1770976484.pdf'><i class=''></i> Airport Services timetable</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://mfs.mybmtc.com/indexmfs.php'><i class=''></i> Metro Feeder Live Tracking</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1765527688.pdf'><i class=''></i> Metro Feeder Service</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/VAJRATIMINGSENG(3).pdf'><i class=''></i> Vajra Services Timetable</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Chartered Services/en'><i class=''></i> Chartered Services</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Passenger%20bus%20fares/en'><i class=''></i> Passenger bus fares</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Advertisement and Filmy Contract Fare/en'><i class=''></i> Advertisement and Filmy Contract Fare</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/wonderlaeng(3).pdf'><i class=''></i> Wonderla Services</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://lms.mybmtc.com/BusBooking/'><i class=''></i> Contract Basis Bus</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1746860294.pdf'><i class=''></i> Vayuvajra Services Main Bus Stop Wise Fare</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://kias.mybmtc.com'><i class=''></i> Airport Services</a></li><li class='nav-item dropdown dropend  level_1'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> One day tour package</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-1'><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=1912|Bengaluru%20Rounds&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 4  (KBS-Bng City Rounds)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050|Kempegowda%20Bus%20Station&toCity=5301|Divya%20Darshana%203&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 3  (KBS-Art of Living)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050|Kempegowda%20Bus%20Station&toCity=2923|Divya%20Darshana%202%20Kbs-ghati&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 2  (KBS-Ghati)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5311|Divya%20Darshana%201d%20Wtf-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1D  (WFTTMC- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5310|Divya%20Darshana%201c%20Mrbs-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1C  (MRBS- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5306|Divya%20Darshana%206%20Jain%20Temple-devanahalli&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 6  (KBS-Jain Temple DVN)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5307|Divya%20Darshana%205%20Begur-c.tirupathi&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 5  (CSB-Chikkatirupati)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5309|Divya Darshana 1b Csb-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1B  (CSB- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050%7CKempegowda%20Bus%20Station&toCity=5179%7CDivya%20Darshana%201%20Kbs-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1  (KBS-Isha )</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368%7CBengaluru&toCity=5308%7CDivya%20Darshana%201a%20Bsk-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1A  (BSK- Isha)</a></li></ul></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/13/department-application-login/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Department Application Login</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_0'><a class='nav-link' href='http://outlook.office365.com/owa/mybmtc.com'><i class=''></i> e-mail login</a></li><li class='nav-item  level_0'><a class='nav-link' href='http://ems.mybmtc.com/BMTC/login.php'><i class=''></i> Employee Management System</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://eofficesbc.karnataka.gov.in/'><i class=''></i> e-office</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/3/rti/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> RTI</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> Online RTI</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/4/rti-4%281%29a/en'><i class=''></i> RTI 4(1)A</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/5/rti-4%281%29-b/en'><i class=''></i> RTI 4(1) B</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/RTIPIOENGupdated04-6-24.pdf'><i class=''></i> List of PIO-APIO-AA</a></li></ul></li></ul> 
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+<style>
+
+.opennav .fa-bars{background: #0000004d;
+    padding: 11px 12px;
+    vertical-align: sub;
+    float: right;
+    text-align: right;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 40px;}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #001937;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 3px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.2s !important;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    line-height: 1;
+    padding: 12px 14px 1px 14px;
+    /* margin-left: 50px; */
+    background: #0ad2d87a;
+    /* border-radius: 50px; */
+    text-align: center;
+    /* margin: auto; */
+    display: table;
+    /* width: 20px; */
+    /* height: 22px; */
+    color: aliceblue;
+}
+
+#main {
+  transition: margin-left .2s;
+
+}
+ .opennav{
+    font-size: 30px;
+    cursor: pointer;
+
+    display: flex ;
+   }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+    .sidenav a {
+        font-size: 16px !important;
+        line-height: initial !important;
+    }
+  
+}
+</style>
+
+
+<div id="vardha" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="accordian" class="scms-acc">
+      <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu extramenudesk'><li class='nav-item level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/en'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/10/complaints/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Complaints</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='http://crm.mybmtc.com'><i class=''></i> New Complaint</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://crm.mybmtc.com/All_module'><i class=''></i> Public Grievance Dashboard</a></li></ul></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/7/recruitment/en'><i class=''></i> Recruitment</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Services.</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Casual Contract/en'><i class=''></i> Casual Contract</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1770976484.pdf'><i class=''></i> Airport Services timetable</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://mfs.mybmtc.com/indexmfs.php'><i class=''></i> Metro Feeder Live Tracking</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1765527688.pdf'><i class=''></i> Metro Feeder Service</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/VAJRATIMINGSENG(3).pdf'><i class=''></i> Vajra Services Timetable</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Chartered Services/en'><i class=''></i> Chartered Services</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Passenger%20bus%20fares/en'><i class=''></i> Passenger bus fares</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/new-page/Advertisement and Filmy Contract Fare/en'><i class=''></i> Advertisement and Filmy Contract Fare</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/wonderlaeng(3).pdf'><i class=''></i> Wonderla Services</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://lms.mybmtc.com/BusBooking/'><i class=''></i> Contract Basis Bus</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/uploads/media_to_upload1746860294.pdf'><i class=''></i> Vayuvajra Services Main Bus Stop Wise Fare</a></li><li class='nav-item  level_1'><a class='nav-link' href='http://kias.mybmtc.com'><i class=''></i> Airport Services</a></li><li class='nav-item dropdown dropend  level_1'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> One day tour package</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-1'><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=1912|Bengaluru%20Rounds&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 4  (KBS-Bng City Rounds)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050|Kempegowda%20Bus%20Station&toCity=5301|Divya%20Darshana%203&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 3  (KBS-Art of Living)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050|Kempegowda%20Bus%20Station&toCity=2923|Divya%20Darshana%202%20Kbs-ghati&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 2  (KBS-Ghati)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5311|Divya%20Darshana%201d%20Wtf-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1D  (WFTTMC- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5310|Divya%20Darshana%201c%20Mrbs-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1C  (MRBS- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5306|Divya%20Darshana%206%20Jain%20Temple-devanahalli&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 6  (KBS-Jain Temple DVN)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5307|Divya%20Darshana%205%20Begur-c.tirupathi&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 5  (CSB-Chikkatirupati)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368|Bengaluru&toCity=5309|Divya Darshana 1b Csb-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1B  (CSB- Isha)</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=5050%7CKempegowda%20Bus%20Station&toCity=5179%7CDivya%20Darshana%201%20Kbs-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1  (KBS-Isha )</a></li><li class='nav-item  level_2'><a class='nav-link' href='https://ksrtc.in/search?mode=oneway&fromCity=368%7CBengaluru&toCity=5308%7CDivya%20Darshana%201a%20Bsk-isha&departDate=26-07-2025&stationInFromCity=&stationInToCity=&IsSingleLady=0'><i class=''></i> Divya Darshana - 1A  (BSK- Isha)</a></li></ul></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/13/department-application-login/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Department Application Login</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_0'><a class='nav-link' href='http://outlook.office365.com/owa/mybmtc.com'><i class=''></i> e-mail login</a></li><li class='nav-item  level_0'><a class='nav-link' href='http://ems.mybmtc.com/BMTC/login.php'><i class=''></i> Employee Management System</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://eofficesbc.karnataka.gov.in/'><i class=''></i> e-office</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://mybmtc.karnataka.gov.in/3/rti/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> RTI</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> Online RTI</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/4/rti-4%281%29a/en'><i class=''></i> RTI 4(1)A</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/5/rti-4%281%29-b/en'><i class=''></i> RTI 4(1) B</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://mybmtc.karnataka.gov.in/storage/pdf-files/RTIPIOENGupdated04-6-24.pdf'><i class=''></i> List of PIO-APIO-AA</a></li></ul></li></ul> 
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+<script type="text/javascript">
+$('a[data-bs-toggle="dropdown"]').removeAttr('href');
+function openNav() {
+  document.getElementById("vardha").style.width = "250px";
+
+}
+
+function closeNav() {
+  document.getElementById("vardha").style.width = "0";
+
+}
+ 
+</script>
+
+
+<div class="feedback-btn">
+  <a href="https://mybmtc.karnataka.gov.in/feedback/en">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <span>Feedback</span>
+  </a>
+</div>
+
+
+
+    <script>
+    // Function to set theme colors
+    function setTheme(color1, color2) {
+        // Set the CSS variables for --primary-color and --secondary-color
+        document.documentElement.style.setProperty('--primary-color', color1);
+        document.documentElement.style.setProperty('--secondary-color', color2);
+
+        // Save the selected colors in cookies
+        document.cookie = "theme1=" + color1 + "; path=/; max-age=15"; // 30 days expiry
+        document.cookie = "theme2=" + color2 + "; path=/; max-age=15"; 
+    }
+
+    // Function to get the value of a cookie
+    function getCookie(name) {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return null;
+    }
+
+    // Apply the theme colors on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const theme1 = getCookie('theme1');
+        const theme2 = getCookie('theme2');
+        if (theme1 && theme2) {
+            document.documentElement.style.setProperty('--primary-color', theme1);
+            document.documentElement.style.setProperty('--secondary-color', theme2);
+        }
+    });
+</script>
+
+
+<style></style><script></script>	
+	 <div class="title-block"  style="background:#f5f5f5;" >
+	 	<a onclick="goBack()" class="back-btn"><i class="fa fa-arrow-left btn btn-back"><span class="hidden-sm hidden-xs">Back	</span></i></a>
+  <div class="title" >	 Metro Feeder Route details		
+		
+	</div>
+
+   
+  </div> 
+
+
+		<div class="container ipage">
+		<table style="width: 757.078px; height: 852px;"><tbody><tr><td style="width: 79px; text-align: center;"><span style="font-size: 13.3333px;"><strong>Sl.No</strong></span></td><td style="width: 193px; text-align: center;"><span style="font-size: 13.3333px;"><strong>Route No</strong></span></td><td style="width: 455px; text-align: center;"><span style="font-size: 13.3333px;"><strong><span style="color: #000000; font-family: Verdana, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Origin</span></strong></span></td><td style="width: 503.078px; text-align: center;"><span style="font-size: 13.3333px;"><strong><span style="color: #000000; font-family: Verdana, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Destination</span></strong></span></td></tr><tr><td style="width: 79px; text-align: center;">1</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF1F.jpeg">MF1F</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">S V Metro station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Rameshnagara</span></td></tr><tr><td style="width: 79px; text-align: center;">2</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF1K.jpeg">MF1K</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kadugodi Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kannamangala</span></td></tr><tr><td style="width: 79px; text-align: center;">3</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF1G.jpeg">MF1G</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">ITPL Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">ITPL Metro Station</span></td></tr><tr><td style="width: 79px; text-align: center;">4</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF1GA.jpeg">MF1GA</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">ITPL Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">ITPL Metro Station</span></td></tr><tr><td style="width: 79px; text-align: center;">5</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF3.jpeg">MF3</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Marathahalli</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kadugodi Metro Station</span></td></tr><tr><td style="width: 79px; text-align: center;">6</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF4.jpeg">MF4</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Marathahalli</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kadugodi Metro Station</span></td></tr><tr><td style="width: 79px; text-align: center;">7</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF5.jpeg">MF5</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Central silk board</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">SMV railway station</span></td></tr><tr><td style="width: 79px; text-align: center;">8</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/VMF6.jpeg">VMF6</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Central silk board</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">SV Metro station</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">9</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF7.jpeg">MF7</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Baiyappanahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kanakagiri</span></td></tr><tr><td style="width: 79px; text-align: center;">10</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF8.jpeg">MF8</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Cubbon Park Metro</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Cubbon Park Metro</span></td></tr><tr><td style="width: 79px; text-align: center;">11</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF9.jpeg">MF9</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Hoodi Metro</span>&nbsp;</td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">KR Puram</span></td></tr><tr><td style="width: 79px; text-align: center;">12</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF10.jpeg">MF10</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Tin Factory&nbsp;</span></td><td style="width: 503.078px; text-align: center;">Whitefield (Kadugodi) Metro Station</td></tr><tr><td style="width: 79px; text-align: center;">13</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF12.jpeg">MF12</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vijayanagara</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Banashankari TTMC</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">14</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF13.jpeg">MF13</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vijayanagara</span>&nbsp;</td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Shankarnag bus stand</span></td></tr><tr><td style="width: 79px; text-align: center;">15</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF14.jpeg">MF14</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Rajarajeshwari nagara Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Srinivasapura Cross</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">16</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF15.jpeg">MF15</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">JP Nagara Metro</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">JP Nagara 7th Block</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">17</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF17.jpeg">MF17</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jayanagara Metro Station</span>&nbsp;</td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vaddarapalya JP Nagara 8th Phase</span></td></tr><tr><td style="width: 79px; text-align: center;">18</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF18.jpeg">MF18</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Shanthinagara TTMC</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Shanthinagara TTMC</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">19</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF18A.jpeg">MF18A</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Shanthinagara TTMC</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Shanthinagara TTMC</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">20</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF19.jpeg">MF19</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jayanagara 9th Block</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jayanagara 9th Block</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">21</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/MF21.jpeg">MF21</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Banashankari</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">BTM layout (Kuvempunagara)</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">22</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF23A.jpeg">MF23A</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">23</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF23B.jpeg">MF23B</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">BEL Circle</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">24</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF23E.jpeg">MF23E</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">MS Palya</span></td></tr><tr><td style="width: 79px; text-align: center;">25</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF24.jpeg">MF24</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Laggere</span></td></tr><tr><td style="width: 79px; text-align: center;">26</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF25.jpeg">MF25</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">8th Mile</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Thippenahalli</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">27</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF26.jpeg">MF26</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">28</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF27.jpeg">MF27</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Staion</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Makali</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">29</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF28.jpeg">MF28</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vidyaranyapura</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Laggere</span></td></tr><tr><td style="width: 79px; text-align: center;">30</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF34.jpeg">MF34</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kengeri TTMC</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Thalaghattpura</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">31</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF36.jpeg">MF36</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Silk Institute Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kumbalagodu</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">32</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF39.jpeg">MF39</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jnanabharathi Metro Station</span>&nbsp;</td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Ramasandra</span></td></tr><tr><td style="width: 79px; text-align: center;">33</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF40.jpeg">MF40</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jnanabharathi Metro Station</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Ullalu Satellite Town</span></td></tr><tr><td style="width: 79px; text-align: center;">34</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF42.jpeg">MF42</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kengeri TTMC</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Tavarekere</span></td></tr><tr><td style="width: 79px; text-align: center;">35</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF45.jpeg">MF45</a></span></td><td style="width: 455px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Banashankari TTMC</span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vijayanagara TTMC</span></td></tr><tr><td style="width: 79px; text-align: center;">36</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro feeder route details/MF23.jpeg">MF23</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span>&nbsp;</td></tr><tr><td style="width: 79px; text-align: center;">37</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF1E.jpeg">MF1E</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">KR Puram Metro Station</span></td><td style="width: 503.078px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Central silk board <br /></span></td></tr><tr><td style="width: 79px; text-align: center;">38</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/VMF1C.jpeg">VMF1C</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">SMV railway Metro Station<br /></span></td><td style="width: 503.078px; text-align: center;">&nbsp;<span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Channasandra</span></td></tr><tr><td style="width: 79px; text-align: center;">39</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF3A(1).jpeg">MF3A</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kadugodi Metro Station</span></td><td style="width: 503.078px; text-align: center;">Kadugodi Metro Station</td></tr><tr><td style="width: 79px; text-align: center;">40</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF4A(1).jpeg">MF4A</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kadugodi Metro Station</span></td><td style="width: 503.078px; text-align: center;">Kadugodi Metro Station</td></tr><tr><td style="width: 79px; text-align: center;">41</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;">MF25A</span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">8th Mile</span></td><td style="width: 503.078px; text-align: center;">Suvarna Nagara</td></tr><tr><td style="width: 79px; text-align: center;">42</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;">MF29</span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">Madanayakanahalli</td></tr><tr><td style="width: 79px; text-align: center;">43</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;">MF30</span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">Jalahalli Metro Station</td></tr><tr><td style="width: 79px; text-align: center;">44</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;">MF31</span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jalahalli Metro Station</span></td><td style="width: 503.078px; text-align: center;">Jalahalli Metro Station</td></tr><tr><td style="width: 79px; text-align: center;">45</td><td style="width: 193px; text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://mybmtc.karnataka.gov.in/storage/pdf-files/Metro%20feeder%20route%20details/MF46.jpeg">MF46</a></span></td><td style="width: 455px; text-align: center;"><span style="color: #000000; font-family: 'Bookman Old Style', serif; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kengeri Metro Station</span></td><td style="width: 503.078px; text-align: center;">Kengeri Metro Station</td></tr></tbody></table><p>&nbsp;</p>	</div>
+<div class="modal fade" id="screen_reader_en" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+           
+              <h4 class="modal-title">Screen Reader Access </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+              <p>Following table lists the information about different screen readers:</p>
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Screen Reader</th>
+                  <th>Website</th>
+                  <th>Free/ Commercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Non Visual Desktop Access (NVDA)</td>
+                  <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>JAWS</td>
+                  <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Window-Eyes</td>
+                  <td><a href="http://www.gwmicro.com/" target="_blank">http://www.gwmicro.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>System Access To Go</td>
+                  <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WebAnywhere</td>
+                  <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+  <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+      </div>
+           
+          </div>
+          
+        </div>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+<style>
+
+.search-box {
+  position: relative;
+  height: 25px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.acts_table td, .acts_table p, .acts_table a {
+    background: #350dff;
+    color: white !important;
+}
+.search-box.active {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.dpal-gserach-btn{color: white;padding: 6px;}
+
+.search-btn {
+  color: #fff;
+  transition: 0.4s;
+  z-index: 1;background: transparent;border:0px;
+
+  margin-left: -10px;margin-top: 6px;
+}
+
+.search-box.active .search-btn {
+  color: #2f3640;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #2f3640;
+  font-size: 16px;
+  width: 0;
+  transition: 0.4s;
+  /*margin-left: 10px;*/
+  z-index: 0;
+}
+
+.search-box.active .search-txt {
+  width: 100%;
+}
+    /* First Modal Styles */
+    .kswdc_modal-body p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img{width: 100%;}
+    .kswdc_dflex{display: flex;}
+    
+    /* Second Modal Styles */
+    .kswdc_modal-body2 p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img2 {width: 100%;}
+    .kswdc_dflex2 {display: flex;}
+</style>
+
+
+<script>
+    $(document).ready(function(){
+      var path = window.location.pathname.replace(/^\/|\/$/g, '');
+      var segments = path === '' ? [] : path.split('/');
+
+      if (segments.length <= 1) {
+        // Show first modal if active
+        
+        // Show second modal if active (with delay to avoid conflict)
+              }
+    });
+</script>
+<style type="text/css">
+.mongologo{display:none !important;}
+td,th{color:black !important;}
+  .modal{background: #0e0e0ebf;}
+  .footer{width:100% !important;}
+      .modal-body{color: black;}
+    .foot-bottom{   display: flex;
+    background: #333434;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;}
+    .vhide{visibility: hidden;}
+    .lineDiv2,.lineDiv1{background-color: goldenrod !important;}
+        i.fa.fa-angle-right {
+    padding-right: 8px;
+}
+
+.footerSectionDetails a{color: white !important;}
+
+.footer_container li,.footer_container a{cursor: pointer;color:white;}
+  .modal-title{width: -webkit-fill-available}
+  .cls-btn{padding: 8px 10px 0px 10px;}
+</style>
+
+
+
+
+
+<section class="footer_container">
+    <div class="container footerSection_Div">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>Disclaimer</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP"><p>
+                       Please note that this page also provides links to the websites / web pages of Govt. Ministries/Departments/Organisations. <br>The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion
+                    </p>
+                </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4">
+
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p> Website Policies and Guidelines </p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP1">
+                    <div>
+                         <ul class="list-unstyled">
+      <li data-bs-toggle="modal" data-bs-target="#myModalf3"><i class="fa fa-angle-right" aria-hidden="true"></i>Copyright Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf4"><i class="fa fa-angle-right" aria-hidden="true"></i>Hyperlinking Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf5"><i class="fa fa-angle-right" aria-hidden="true"></i>Security Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf6"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms & Conditions</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf7"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</li>
+
+      </ul> 
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+
+           <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle "><p>Accessibility Resources</p></div>
+                <div class="lineDiv "> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+					
+                </div><br>
+                <div class="footerSectionP"><p>
+                     <ul class="list-unstyled">
+                          <li><a href="https://mybmtc.karnataka.gov.in/sitemap/kn"><i class="fa fa-angle-right" aria-hidden="true"></i>Sitemap </a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf8"><i class="fa fa-angle-right" aria-hidden="true"></i>Help</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf9"><i class="fa fa-angle-right" aria-hidden="true"></i>Screen Reader Access</li>
+      <li><a href="https://ceg.karnataka.gov.in/guidelines/kn" ><i class="fa fa-angle-right" aria-hidden="true"></i>Guidelines</a></li>
+    </ul>
+                    </p>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div>
+
+
+
+        <div class="lastUpdate">
+            <div><p>Last Updated: </p></div>
+            <div><p>Visitors Counter: 2765899</p></div>
+            <div><p>Version: CeG/KRN 4.0</p></div>
+        </div>
+
+
+        <div class="contentOwner">
+            <p>  Content Owned and maintained by: Bengaluru Metropolitan Transport Corporation, Government of Karnataka</p>
+            <p>Designed , Developed & Hosted by: Centre for e-governance - Webportal karnataka government © 2026, All Rights Reserved.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="footer ">
+
+
+
+<ul class="list-inline foot-bottom">
+      <li>
+       <a href="https://www.meity.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/Meity_logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://digitalindia.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/digital-india-logo.png" class="footer_image"></a>
+      </li> 
+      <li>
+       <a href="https://data.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/data-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.india.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/india-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.pmindia.gov.in/en/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/pm-india-logo.png" class="footer_image"></a>
+      </li>
+
+      <li class="footer4_divider"></li>
+      <li></li>
+     <li>
+       <a href="https://guidelines.india.gov.in/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GIGW.jpeg" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.w3.org/TR/WCAG22/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/WCAG.jpeg" class="footer_image"></a>
+      </li> 
+      <li>
+      <a href="https://www.https.in/government-solutions"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/SSLcertificate.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://www.w3schools.com/html/default.asp"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/w3c.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://kannadapraadhikaara.karnataka.gov.in"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/kp_kn.jpeg" class="footer_image"></a>
+      </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Copyright Policies -->
+  <div class="modal fade" id="myModalf3" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Copyright Policy</h4>
+		            <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+         
+         <p class="copy_header">Copyright policy (if the published information is available free of any charge)</p>
+
+           <p>1)Information featured on this website can be re-published in any media form free
+               of any charge only with prior permission from us(CeG) or concerned respective authority which is owning the website, through email.</p>
+           <p>2)Information can be republished as it is available and not to be used in a distorted or misleading manner.</p>
+           <p>3)Where the material is being published or suggested to others, the source must be prominently acknowledged </p>
+           <p>4)13. However, the permission to reproduce this material does not extend to any material on this site, which is explicitly identified as being the copyright of a third party</p>
+          
+        <p class="copy_header">Copyright policy (if there is a provision to reuse published information)</p>
+        
+           <p>1)The information published on the website comes under copyright policy and obtaining authorization for their republish is a pre-requisite.</p>  
+
+           <p>2)To get permission one can mail to ………………..@.........</p>
+
+         
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Hperlinking Policies -->
+  <div class="modal fade" id="myModalf4" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Hyperlinking Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+         <p class="copy_header">(in case the respective department doesn’t need any permission to hyperlink in their website) </p>
+
+           <p>1)We do not object to you linking directly to the information that is hosted on our site and no prior permission is required for the same.</p>
+
+           <p>2)we do not permit our pages to be loaded into frames on other sites. Our Department’s pages must load into a newly opened browser window of the user.</p>
+
+        <p class="copy_header">(in case of hyperlink permission is necessary for the website)</p>
+        
+           <p>1)to provide any link or its form on this website, it is compulsory to procure permission. </p>  
+
+           <p>2)permission can be obtained from the Centre for e-governance by requesting to this email. pd.webportal@karnataka.gov.in</p>
+ 
+           <p>3)Before leaving this government website note: this contact button will lead to another website, to get more information on such new opened site, one must contact the concerned contacts registered on that website.</p>
+         
+
+        </div>
+     
+      </div>
+      
+    </div>
+  </div>
+   
+
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Security Policies -->
+  <div class="modal fade" id="myModalf5" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Security Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+           <p> 1) For site security purposes and to ensure that this service remains available to all users, this Government      computer system employs commercial software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage.
+           </p><br>
+
+          <p>2)  Except for authorized law enforcement investigations, no other attempts are made to identify individual users or their usage habits. Raw data logs are used for no other purposes and are scheduled for regular deletion.
+          </p><br>
+
+          <p>3) Unauthorized attempts to upload information or change information on this service are strictly prohibited and may be punishable under the Indian IT Act (2000).</p><br>
+
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ <!-------------------------------------------------------------------->
+  <!-- Terms & Conditions -->
+  <div class="modal fade" id="myModalf6" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Terms & Conditions</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p>1)This website is designed, developed, and maintained by the center for e-governance.</p><br>
+
+          <p>2) Though all efforts have been made to ensure the accuracy and currency of the content on this website, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify/check with the Department(s) and/or other source(s) and to obtain appropriate professional advice.</p><br>
+
+          <p>3) ) Under no circumstances will this Department be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p><br>
+
+          <p>4) These terms and conditions shall be governed by and construed in accordance
+          with the Indian Laws. Any dispute arising under these terms and conditions
+          shall be subject to the jurisdiction of the courts of India.</p><br>
+
+
+          <p>5) The information posted on this website could include hypertext links or
+          pointers to information created and maintained by non-Government/private
+          organisations. (Name of Department) is providing these links and pointers solely
+          for your information and convenience. When you select a link to an outside
+          website, you are leaving the website and are subject to
+          the privacy and security policies of the owners/sponsors of the outside website.</p><br>
+
+
+          <p>6) The concerned department does not guarantee the availability of such linked pages at all times.</p><br>
+
+          <p>7)The concerned department, cannot authorize the use of copyrighted materials contained in linked websites. Users are advised to request such authorization from the owner of the linked website.</p><br>
+
+          <p>8)The concerned  department does not guarantee that linked websites comply with Indian Government Web Guidelines</p>
+          <br>
+ 
+          <p>If the user visits the information and collects information or downloads files, the following elements may automatically download,</p>
+          
+          <ul>
+            <li>- your service domain, IP number, how visitors accessed our website.</li>
+            <li>- browsers and operating systems.</li> 
+            <li>- date and time of users’ visits.</li> 
+            <li>- URLs from which visitors accessed information.</li>
+            <li>- if the user has visited the website from other websites, details of that website</li>
+          </ul>
+ 
+
+         <h6>Cookies</h6>
+
+          <p>
+            When you visit some websites, they may download small pieces of software on your computer/browsing device known as cookies. Some cookies collect personal information to recognize your computer in the future. We only use non-persistent cookies or “per-session cookies”. 28 Per-session cookies serve technical purposes, like providing seamless navigation through this website. These cookies do not collect personal information on users and they are deleted as soon as you leave our website. The cookies do not permanently record data and they are not stored on your computer’s hard drive. The cookies are stored in memory and are only available during an active browser session. Again, once you close your browser, the cookie disappears.
+          </p>
+
+
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Privacy Policies -->
+  <div class="modal fade" id="myModalf7" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Privacy Policies</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="copy_header">privacy policy : (when the website doesn’t collect any personal information)</p>
+            <p>
+              We collect no personal information, like names or addresses, when you visit our website. If you choose to provide that information to us, it is only used to fulfill your request for information
+            </p>
+
+          <p class="copy_header">user information: </p>
+            <p>
+              we do collect technical user details when a user visits the websites and visitor information such as the type of browser, server, and domain, date and time, details of documents downloaded are recorded, This information is only used to help us make the site more useful for you. With this data, we learn about the number of visitors to our site and the types of technology our visitors use. We never track or record information about individuals and their visits. (except in the case when directed by the court through a warrant) 
+            </p>
+
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p> 
+
+          <p class="copy_header">Email management: </p>
+            <p>
+             emails are stored when a user sends any information only for that instant and is used only to give information to them. these are not to be used for any purposes or to include in the contact list. without intimating the user, it won’t be revealed.
+            </p> 
+            
+          <p class="copy_header">collection of personal details:  </p>
+            <p>
+              if the user asks or provides any personal information, the details of its usage are mentioned. if you are not satisfied or suspicious about the details are given or wish to provide an opinion about the same, its necessary for you to contact assigned webmasters under ‘contact us’ section 
+
+              note: private pieces of information received under ‘Personal details’ will only be used to collect identity or elements for easy identification. 
+ 
+            </p> 
+            
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p>     
+
+            <h6 style="font-weight: 600;">if the user provides personal information.</h6>
+             <p>
+               1. We do not collect personal information for any purpose other than to respond to you (for example, to respond to your questions or provide subscriptions you have chosen). If you choose to provide us with personal information like filling out a Contact Us form, with an e-mail address or postal address, and submitting it to us through the website-we use that information to respond to your message and to help you get the information you have requested. We only share the information you give us with another Government agency if your question relates to that agency, or as otherwise required by law. 
+            </p>
+            <p>
+              2. Our website never collects information or creates individual profiles for commercial marketing. While you must provide an email address for a localized response to any incoming questions or comments to us, we recommend that you do NOT include any other personal information.
+            </p>
+
+          
+           <h6 style="font-weight: 600;">website security </h6>
+             <p>
+              1)to make the information available to all, to prevent unauthorized user entry, to stop harming or distorting information and keeping the security of the website in mind, also to handle user traffic, commercial software programs are used. 
+             </p>
+
+             <p>
+               2)Except for official law institutions, no attempts are made to personally identify the visitor or user.
+             </p>
+             
+             <p>3)Visitor information is subject to regular deletion</p>
+             <p>4)unauthorized users shall not add or change information available which can have legal consequences and may be subjected to fine under IT act (2000).</p>
+ 
+        </div>
+  
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Help -->
+  <div class="modal fade" id="myModalf8" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Help</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6 style="text-decoration: underline;" class="copy_header">INFORMATION SEARCH:</h6>
+
+           <p> to help users access information within the website, a “search here” option is been provided. here, the option to type in Kannada is made available. while searching, usage of Unicode font is compulsory. option to search in English is also provided. </p>
+
+          <h6 style="text-decoration: underline;" class="copy_header">INTERNET ACCESSIBILITY</h6> 
+
+            <p>if the internet is slow or unavailable, there may be a modification in website design or some subpages may not open. </p>
+
+          </p><br>
+
+          <div class="scroll-table1  table table-striped table-bordered"><div class="guide-text"><i class="fa fa-long-arrow-right"></i></div><div class="scroll-table"><table id="tablehelp" class="border" border="1"> <caption>Help of Various File formats :</caption> <tbody> <tr> <th>Document Type</th> <th>Download</th> </tr> <tr class="even"> <td>PDF content</td> <td> <img src="https://labour.gov.in/sites/default/files/pdf.png" alt="image"><a href="http://get.adobe.com/reader/" target="_BLANK" title="External site that opens in a new window"> Adobe Acrobat Reader</a> (External website that opens in a new window) </td> </tr> <tr class="odd"> <td>Word files</td> <td><img src="https://labour.gov.in/sites/default/files/Word.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Word Viewer (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Word (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Excel files</td> <td> <img src="https://labour.gov.in/sites/default/files/Excel.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Excel Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Excel (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="odd"> <td>PowerPoint presentations</td> <td><img src="https://labour.gov.in/sites/default/files/powerpoint.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> PowerPoint Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Flash content</td> <td> <img src="https://labour.gov.in/sites/default/files/Flash.png" alt="image"> <a href="http://get.adobe.com/flashplayer/" target="_BLANK" title="External site that opens in a new window">Adobe Flash Player </a>(External website that opens in a new window) </td> </tr> <tr class="odd"><td>Audio Files</td> <td> <img src="https://labour.gov.in/sites/default/files/red.png" alt="image"> <a href="http://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANK" title="External site that opens in a new window">Windows Media Player </a>(External website that opens in a new window) </td> </tr> </tbody> </table></div></div>
+
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Screen Reader Access -->
+  <div class="modal fade" id="myModalf9" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Screen Reader Access</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="nicetext">        
+            <div class="innerpage">
+             <div id="skipCont" class="wrapper">
+       
+             <div class="row">                 
+              <div class="col-md-12 col-sm-9 col-xs-12">
+                <h1 class="heading" tabindex="0"></h1>
+                <div class="region region-content">
+                <div id="block-system-main" class="block block-system">
+
+    
+                <div class="content">
+                 <div class="panel-display panel-1col clearfix">
+                 <div class="panel-panel panel-col">
+                   <div>
+                    <div class="panel-pane pane-views pane-page">
+  
+                     <div class="pane-content">
+                       <div class="view view-page view-id-page view-display-id-block view-dom-id-9f59a9bf8ad69ecc93f01660ca78bb00">
+        
+                       <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+                         <div class="views-field views-field-body">        
+                          <div class="field-content">
+                            <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+                            <p>Following table lists the information about different screen readers:</p>
+
+                            <div class="guide-text">
+                              <i class="fa fa-long-arrow-right"></i>
+                            </div>
+
+                            <div class="scroll-table1">  
+                              <table class="srtable table table-striped table-bordered" summary="Screen Reader">
+                                <tbody>
+                                  <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free/ Commercial</th>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Non Visual Desktop Access (NVDA)</td>
+                                    <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a><br> (External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2</td>
+                                    <td>JAWS</td>
+                                    <td><a href="http://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a> <br>(External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Window-Eyes</td>
+                                    <td><a href="http://www.gwmicro.com/Window-Eyes/" target="_blank">http://www.gwmicro.com</a><br> (External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>
+                                    <td>System Access To Go</td>
+                                    <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a><br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td>WebAnywhere</td>
+                                    <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a> <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+								  
+								  
+								  
+								    <tr>
+                                    <td>6</td>
+                                    <td>atoall</td>
+                                    <td><a title="This Will Make You Easy For Growth, Use Accessibility Tool" target="_blank" rel="noopener" href="https://atoall.com/all.asp"> <img height="64" width="64" alt="This Will Make You Easy For Growth, Use Accessibility Tool" src="https://atoall.com/all/512-accessibility-square.svg"></a>
+ <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+  
+                </div>  
+               </div>
+  
+              </div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/acc_search.js"></script>  
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/custom.js"></script>   
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/aos.js"></script>  
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/map/main.js"></script> 
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.js"></script> 
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/rti_datatables/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/tabswipe/js/swipebundle.js"></script>   
+<script type="text/javascript" src="https://mybmtc.karnataka.gov.in/assets/front/js/custom_fancybox.js"></script>  
+
+<script>
+      
+   $('[data-fancybox="gallery"]').fancybox({
+  buttons: [
+    "slideShow",
+    "thumbs",
+    "zoom",
+    "fullScreen",
+    "share",
+    "close"
+  ],
+  loop: false,
+  protect: true
+});
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById('toggle');
+    const darkModeAreas = document.querySelectorAll('.dark-mode-area');
+
+    // Define the dark mode CSS for specific classes and elements
+    const darkModeCSS = `
+        .dark-mode-area.dark-mode h1,
+        .dark-mode-area.dark-mode header,
+        .dark-mode-area.dark-mode body,
+        .dark-mode-area.dark-mode div,
+        .dark-mode-area.dark-mode span,
+        .dark-mode-area.dark-mode h6,
+        .dark-mode-area.dark-mode li,
+        .dark-mode-area.dark-mode p,
+        .dark-mode-area.dark-mode .header,
+        .dark-mode-area.dark-mode .navbar-sec,
+        .dark-mode-area.dark-mode button,
+        .dark-mode-area.dark-mode section,
+        .dark-mode-area.dark-mode extramenudesk,
+        .dark-mode-area.dark-mode dropdown-menu,
+        .dark-mode-area.dark-mode dropdown,
+        .dark-mode-area.dark-mode nav-item,
+        .dark-mode-area.dark-mode nav-link,
+        .dark-mode-area.dark-mode .dropdown-menu.show,
+        .dark-mode-area.dark-mode .dropdown-menu a,
+        .dark-mode-area.dark-mode .closebtn,
+        .dark-mode-area.dark-mode .btn,
+        .dark-mode-area.dark-mode td,
+         .dark-mode-area.dark-mode th,
+         .dark-mode-area.dark-mode table,
+            .dark-mode-area.dark-mode .extramenudesk li a,
+         .dark-mode-area.dark-mode thead,
+        .dark-mode-area.dark-mode .subHeaderFontSize,
+            .dark-mode-area.dark-mode .nav-item.dropdown:hover > .dropdown-menu,
+        body.dark-mode-area.dark-mode {
+            background-color: #121212 !important;
+            color: #ffffff  !important;
+            background-image: none !important;
+        }
+        .dark-mode-area.dark-mode button {
+            border-color: #ffffff  !important;
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .background {
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .carousel-indicators {
+            display: none !important;
+        }
+    `;
+
+    // Create a style element
+    const styleElement = document.createElement('style');
+    styleElement.type = 'text/css';
+    styleElement.appendChild(document.createTextNode(darkModeCSS));
+    document.head.appendChild(styleElement);
+
+    // Load saved mode from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', function() {
+        if (this.checked) {
+            darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            darkModeAreas.forEach(area => area.classList.remove('dark-mode'));
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+});
+</script>
+
+     <script>
+        const minFontSize = 16;
+        const maxFontSize = 19;
+        const normalFontSize = 18; // Set this to your normal font size
+
+        const decreaseButton = document.getElementById('fontDecrease');
+        const increaseButton = document.getElementById('fontIncrease');
+        const resetButton = document.getElementById('fontReset');
+        const targetElements = document.querySelectorAll('p, h1, h2, a, li');
+
+        let currentFontSize = parseInt(window.getComputedStyle(targetElements[0]).fontSize, 10);
+
+        function updateFontSize(size) {
+            if (size >= minFontSize && size <= maxFontSize) {
+                targetElements.forEach(el => {
+                    el.style.fontSize = `${size}px`;
+                });
+                currentFontSize = size;
+            }
+        }
+
+        decreaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize - 1);
+        });
+
+        increaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize + 1);
+        });
+
+        resetButton.addEventListener('click', () => {
+            // Reload the page to reset font sizes to default
+            location.reload();
+        });
+
+$(document).ready(function() {
+
+
+    // Optional: If you want to ensure .hamburger doesn't get the active class
+    $('.hamburger').on('click', function(event) {
+       $(this).removeClass('active');
+    });
+});
+
+    </script>
+	
+	
+</body>
+</html>
+

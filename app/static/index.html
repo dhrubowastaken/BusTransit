@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransitPulse | Bangalore Bus Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <div class="page-shell">
+    <header class="hero" role="banner">
+      <div class="hero-copy">
+        <p class="eyebrow">Bangalore public transport demo</p>
+        <h1>Find the next bus in a way that is easy to scan and easy to trust.</h1>
+        <p class="subtitle">
+          This demo uses BMTC metro-feeder route references and real Bangalore stop locations for a clearer passenger experience.
+        </p>
+      </div>
+      <div class="hero-stats" aria-label="Service summary">
+        <div class="stat-card">
+          <span id="activeBusCount">0</span>
+          <p>Active buses</p>
+        </div>
+        <div class="stat-card">
+          <span id="avgEta">0 min</span>
+          <p>Average next-stop ETA</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="mainContent" class="grid accessible-grid">
+      <section class="panel steps-panel" aria-labelledby="tripPlannerTitle">
+        <div class="panel-heading panel-heading-stack">
+          <div>
+            <p class="section-label">Plan Your Trip</p>
+            <h2 id="tripPlannerTitle">Choose a route, then choose a stop</h2>
+          </div>
+          <p class="helper-text">The map updates visually, and the lists below provide a text version of the same information.</p>
+        </div>
+
+        <div class="control-group">
+          <label for="routeSelect">1. Select a BMTC route</label>
+          <select id="routeSelect" aria-describedby="routeHelp"></select>
+          <p id="routeHelp" class="control-help">Routes are based on BMTC metro-feeder services in Bengaluru.</p>
+        </div>
+
+        <div class="control-group">
+          <label for="stopSelect">2. Select a stop on that route</label>
+          <select id="stopSelect" aria-describedby="stopHelp"></select>
+          <p id="stopHelp" class="control-help">Arrival predictions update when you change the stop.</p>
+        </div>
+
+        <div class="status-strip" aria-live="polite">
+          <strong>Last updated:</strong>
+          <span id="lastUpdated">Waiting for live data...</span>
+        </div>
+
+        <article class="route-facts" aria-labelledby="routeFactsTitle">
+          <h3 id="routeFactsTitle">Route details</h3>
+          <div id="routeFacts"></div>
+          <div class="source-note">
+            <strong>Source note:</strong>
+            <span id="sourceNote"></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel map-panel" aria-labelledby="mapTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Live Map</p>
+            <h2 id="mapTitle">Visual route view</h2>
+          </div>
+        </div>
+        <p class="helper-text">Map markers show active buses. Use the lists on this page if you prefer a non-map view.</p>
+        <div id="map" aria-label="Map of the selected Bangalore bus route"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="arrivalTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Upcoming Arrivals</p>
+            <h2 id="arrivalTitle">Next buses for the selected stop</h2>
+          </div>
+        </div>
+        <div id="arrivalBoard" class="arrival-board" aria-live="polite"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="fleetTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Buses On Route</p>
+            <h2 id="fleetTitle">Live bus snapshots</h2>
+          </div>
+        </div>
+        <div id="busCards" class="bus-cards"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="stopListTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Stops</p>
+            <h2 id="stopListTitle">Stop list for the selected route</h2>
+          </div>
+        </div>
+        <ol id="stopList" class="stop-list"></ol>
+      </section>
+
+      <section class="panel info-panel" aria-labelledby="aboutTitle">
+        <p class="section-label">About This Demo</p>
+        <h2 id="aboutTitle">What is real and what is simulated</h2>
+        <ul class="feature-list">
+          <li>Route numbers and route endpoints come from BMTC's public metro-feeder route listing.</li>
+          <li>Stop locations are real Bangalore places along those corridors.</li>
+          <li>Vehicle movement and ETA updates are simulated for the demo experience.</li>
+        </ul>
+        <a class="admin-link" href="/admin">Open admin dashboard</a>
+      </section>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

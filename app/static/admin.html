@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransitPulse | Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#adminMain">Skip to main content</a>
+
+  <div class="page-shell">
+    <header class="hero admin-hero" role="banner">
+      <div class="hero-copy">
+        <p class="eyebrow">Operator Dashboard</p>
+        <h1>Monitor route health in plain language.</h1>
+        <p class="subtitle">
+          This view focuses on service status, occupancy, and next-stop ETAs without making the operator hunt through the interface.
+        </p>
+      </div>
+      <a class="admin-link" href="/">Open passenger dashboard</a>
+    </header>
+
+    <main id="adminMain" class="grid admin-grid">
+      <section class="panel metrics-panel" aria-labelledby="metricsTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Overview</p>
+            <h2 id="metricsTitle">Fleet snapshot</h2>
+          </div>
+          <p id="adminUpdated" class="helper-text">Waiting for live data...</p>
+        </div>
+        <div id="metricCards" class="metric-cards"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="fleetStatusTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Fleet Health</p>
+            <h2 id="fleetStatusTitle">Live bus status table</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Live status of buses currently shown in the demo</caption>
+            <thead>
+              <tr>
+                <th scope="col">Bus</th>
+                <th scope="col">Route</th>
+                <th scope="col">Next stop</th>
+                <th scope="col">ETA</th>
+                <th scope="col">Occupancy</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="fleetTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="routeSummaryTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Route Summary</p>
+            <h2 id="routeSummaryTitle">Active service by route</h2>
+          </div>
+        </div>
+        <div id="routeSummary" class="route-summary"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/admin.js"></script>
+</body>
+</html>
