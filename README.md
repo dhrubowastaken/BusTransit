@@ -44,10 +44,6 @@ uv --version
 
 Open a terminal in the project folder:
 
-```bash
-cd D:\AIDS_Micro_Project
-```
-
 Create the environment and install dependencies:
 
 ```bash
